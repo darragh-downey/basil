@@ -4,5 +4,5 @@ rust_binary(
     name = "basil",
     srcs = ["src/main.rs"],
     data = ["assets/hello_world.txt"],
-    deps = ["//utilities"],
+    deps = ["//utils"],
 )

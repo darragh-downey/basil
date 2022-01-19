@@ -8,3 +8,12 @@ pub fn open_input(file_path: &str) -> std::io::BufReader<std::fs::File> {
     };
     BufReader::new(file)
 }
+
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn it_works() {
+        assert_eq!(2+2, 4);
+    }
+}

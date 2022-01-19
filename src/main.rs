@@ -1,5 +1,5 @@
 use std::io::prelude::*;
-extern crate utilities as utils;
+extern crate utils;
 
 
 fn main() {
