@@ -95,4 +95,4 @@ package-lock.json
 src/test/rustdoc-gui/src/**.lock
 
 # weird target dir 
-target/
+/target

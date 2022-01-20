@@ -1,3 +1,6 @@
+## I was getting too fancy will likely delete soon
+
+
 package(default_visibility = ["//visibility:public"])
 
 licenses([
@@ -9,8 +12,8 @@ licenses([
 # Export file for Stardoc support
 exports_files(
     [
-        "//greeter_lib/BUILD.bazel",
-        "//reader_lib/BUILD.bazel",
+        "greeter_lib",
+        "reader_lib",
     ],
     visibility = ["//visibility:public"],
 )

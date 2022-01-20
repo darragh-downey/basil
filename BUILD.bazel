@@ -1,8 +1,11 @@
-load("@io_bazel_rules_rust//rust:rust.bzl", "rust_binary")
+load("@rules_rust//rust:rust.bzl", "rust_binary")
 
 rust_binary(
     name = "basil",
     srcs = ["src/main.rs"],
     data = ["assets/hello_world.txt"],
-    deps = ["//utils"],
+    deps = [
+        "//utils/greeter_lib:greeter",
+        "//utils/reader_lib:reader",
+        ],
 )
