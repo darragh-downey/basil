@@ -1,0 +1,13 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@rules_rust//rust:image.bzl", "rust_image")
+
+rust_binary(
+    name = "bin",
+    deps = ["//bin"]
+)
+
+rust_image(
+    name = "rusty",
+    binary = [":bin"],
+)

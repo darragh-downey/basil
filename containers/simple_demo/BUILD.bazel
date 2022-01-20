@@ -1,0 +1,8 @@
+load("@io_bazel_rules_docker//container:container.bzl", "container_image")
+
+container_image(
+    name = "simple",
+    base = "@hello_world_latest//image",
+    # cmd = [""],
+    # workdir = "/", # seems to be lacking Docker COPY functionality to specify destination dirs. Using workdir as workaround
+)
